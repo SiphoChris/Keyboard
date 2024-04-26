@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 1rem;
+  font-family: whitney;
+  user-select: none;
+}
+
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #6b18aa;
+  border: 1px solid #333;
+  gap: 5px;
+  width: 800px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.row {
+  flex-grow: 1;
+  display: flex;
+  gap: 5px;
+  height: 45px;
+}
+
+.row > * {
+  flex-grow: 1;
+}
+
+.key {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  background: rgb(225, 189, 27);
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 10px;
+  flex-grow: 1;
+}
+
+.top {
+  height: 32px;
+}
+
+.finger {
+  flex-grow: 0;
+}
+
+.space {
+  flex-grow: 6;
+  background-color: #ff6f1b
+}
+
+.capslock {
+  flex-grow: 1.5;
+  background-color: #ff6f1b
+}
+
+.enter,
+.tab {
+  flex-grow: 2;
+  background-color: #ff6f1b
+}
+
+.shift {
+  flex-grow: 4;
+  background-color: #ff6f1b
+}
+
+.tab,
+.capslock,
+.shift,
+.ctrl,
+.cmd,
+.alt {
+  /* 	padding: 5px; */
+  justify-content: start;
+  align-items: end;
+  background-color: #ff6f1b;
+}
